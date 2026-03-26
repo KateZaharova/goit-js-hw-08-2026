@@ -58,5 +58,5 @@ const parsedSettings = JSON.parse(savedSettings);
 console.log(parsedSettings);// settings object
 */
 
-console.log("Hi from Node.js");
-
+console.log("Хеллоу від Node.js");
+console.log("Москва палає ясно!");

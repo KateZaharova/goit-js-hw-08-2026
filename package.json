@@ -8,8 +8,9 @@
   },
   "author": "Kate_Zakharova <15071981ktz@gmail.com>",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "validator": "^13.15.26"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
