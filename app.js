@@ -58,5 +58,24 @@ const parsedSettings = JSON.parse(savedSettings);
 console.log(parsedSettings);// settings object
 */
 
-console.log("Хеллоу від Node.js");
-console.log("Москва палає ясно!");
+//const Joi = require("joi");
+//const shortid = require("shortid");
+const express = require("express");
+
+const app = express();
+
+app.use("*", (req, res) => {
+  console.log("був запит від браузера");
+  res.send("<h1>Привіт, це тобі привіт від серверу Express!</h1>")
+});
+
+const listener = app.listen(4444, () => {
+  console.log("Сервер запущено на порту" + listener.address().port);
+});
+
+//console.log("Москва палає ясно!");
+
+//const passwordSchema = Joi.string().min(3).max(10).alphanum();
+//console.log(passwordSchema.validate("rr2334r"));
+
+//console.log(shortid.generate());
